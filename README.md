@@ -1,5 +1,5 @@
 # Software-Designs-And-Pattern
-OOPs Design Patterns implemented in Java.
+OOPs Design Patterns implemented in Java using Maven.
 
 # How to compile the project
 Use Apache Maven to compile and run this project. 
