@@ -50,7 +50,7 @@ o	Test files
 
 ## customer Package
 
-## Customer
+### Customer
 
 Class defining general structure of customers.
 
@@ -62,7 +62,7 @@ Customer() - constuctor
 
 Customer(int, String) - Create an object by passing parameters
 
-#### Getters & Setters
+##### Getters & Setters
 
 getId()
 
@@ -72,7 +72,7 @@ getName()
 
 setName(String)
 
-## NewCustomer
+### NewCustomer
 
 Class defining general structure of customers for NEW system.
 
@@ -82,13 +82,13 @@ NewCustomer() - Constructor
 
 NewCustomer(int, String, String) - Create an object by passing parameters
 
-### Getters & Setters
+#### Getters & Setters
 
 getCustType() 
 
 setCustType(String)
 
-## NewCustomerData
+### NewCustomerData
 
 Class saving and managing data of new system customers.
 
@@ -100,13 +100,13 @@ addCustomer(NewCustomer) - Add new customer to new customer database
 
 getCustomer(int) - get customer by their unique ID
 
-### Getters & Setters
+#### Getters & Setters
 
 getCustomerlist()
 
 setCustomerlist(List<NewCustomer>)
 
-## OldCustomer
+### OldCustomer
 
 Class defining general structure of old customers.
 
@@ -114,7 +114,7 @@ OldCustomer() - Constructor
 
 OldCustomer(int, String) - Create an object by passing parameters
 
-## OldCustomerData
+### OldCustomerData
 
 Class saving and managing data of old system customers.
 
@@ -124,7 +124,7 @@ addCustomer(OldCustomer) - Add new customer to new customer database
 
 getCustomer(int) - get customer by their unique ID
 
-### Getters & Setters
+#### Getters & Setters
 
 getCustomerlist()
 
@@ -132,7 +132,7 @@ setCustomerlist(List<OldCustomer>)
 
 ## legacyadapteroldtonew Package
 
-## AdapterOldToNew
+### AdapterOldToNew
 
 Class implementing logic to convert old object to new.
 
@@ -146,13 +146,13 @@ adapt(OldCustomer) - Implementing adapter pattern, converting old system object 
 
 printUsingAdapter() - Print the new customer or system object created
 
-### Getters & Setters
+#### Getters & Setters
 
 getNewCustomer() 
 
 ## newsystem Package
 
-## CustomerDataOverHttps
+### CustomerDataOverHttps
 
 Interface defining functionalities of new system.
 
@@ -164,7 +164,7 @@ getCustomer_WithHttpsConnect(int) - Get new system customer by their ID
 
 getCustomer_WithHttpsConnect(OldCustomer) - Get old customer by using adapter
 
-## UseNewSystem
+### UseNewSystem
 
 Class implementing CustomerDataOverHttps to create New System. It is the NEW SYSTEM.
 
@@ -186,7 +186,7 @@ getCustomer_WithHttpsConnect(OldCustomer) - Get old customer by using adapter
 
 ## oldsystem Package
 
-## CustomerData
+### CustomerData
 
 Interface defining functionalities of old system.
 
@@ -196,7 +196,7 @@ printCustomer()- Print customer last retrieved using get function
 
 getCustomerWithUsbConnect(int) - Get old system customer by their ID
 
-## UseOldSystem
+### UseOldSystem
 
 Class implementing CustomerData to create Old System. It is the OLD SYSTEM.
 
