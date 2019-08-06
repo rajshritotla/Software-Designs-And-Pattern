@@ -16,9 +16,9 @@ One exception: To add a feature or easy access of old system from new system, on
 
 •	Customer ID : I aimed to continue the ID in old and new system, so for this application I have assumed that old system have 2 entries and new system have entries starting from 3. No more new entries will be added to old as it is no longer in use so I can keep that value constant. This is done because in this application I am using Array list to save and access data whose indexing starts from 0, so in code logic for new system to get data for any ID I am subtracting the total old entry value that is 2. In case to test if we need to add more old entries make changes in:
 
-    o	totalOldData variable in NewCustomerData file in customer package
+o	totalOldData variable in NewCustomerData file in customer package
 
-    o	Test files 
+o	Test files 
 
 •	New Customer ID should be +1 of the previous. Its like the primary key in db.
 
